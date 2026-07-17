@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Team member">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ff6eb4"/><stop offset="100%" stop-color="#5c6ef0"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="100" fill="url(#bg)"/>
+  <circle cx="100" cy="82" r="32" fill="#fff" opacity=".95"/>
+  <ellipse cx="100" cy="160" rx="52" ry="40" fill="#fff" opacity=".95"/>
+  <text x="100" y="92" text-anchor="middle" font-family="Fredoka, Quicksand, sans-serif" font-size="20" font-weight="700" fill="#5c6ef0">MR</text>
+</svg>

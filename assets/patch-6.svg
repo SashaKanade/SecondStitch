@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Cloud loop patch">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff6eb4"/><stop offset="100%" stop-color="#5c6ef0"/>
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="92" fill="url(#g)"/>
+  <path d="M62 118c0-18 12-30 30-30 4-14 16-24 32-24 18 0 32 14 34 32 14 2 24 12 24 26 0 16-12 28-30 28H70c-14 0-26-12-26-28 0-10 6-18 18-20z" fill="#fff"/>
+  <path d="M78 128c12 10 32 10 44 0" fill="none" stroke="#ff4da6" stroke-width="3" stroke-linecap="round"/>
+</svg>

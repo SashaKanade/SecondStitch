@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>find secondstitch near you</title>
+    <meta
+      name="description"
+      content="Allow location access to discover stores within 10 km that carry SecondStitch patches."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Quicksand:wght@500;600;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="nav">
+        <a class="logo" href="index.html">
+          <span class="logo__mark" aria-hidden="true"></span>
+          secondstitch
+        </a>
+        <button class="nav__toggle" type="button" aria-label="Menu" aria-expanded="false">
+          <span></span>
+        </button>
+        <nav class="nav__links" aria-label="Primary">
+          <a href="designs.html">designs</a>
+          <a href="submit.html">submit</a>
+          <a href="find.html" aria-current="page">find us</a>
+          <a class="nav__cta" href="contact.html">contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <header class="page-hero">
+        <p class="eyebrow">w i t h i n &nbsp; 1 0 &nbsp; k m</p>
+        <h1 class="display">find secondstitch near you</h1>
+        <p class="lede">
+          we’ll ask for your location, then show every stockist within a 10 km radius that carries our patches.
+        </p>
+      </header>
+
+      <section class="section section--tight" id="map-section" hidden>
+        <p class="map-status" id="map-status">waiting for location…</p>
+        <div class="map-wrap">
+          <div id="store-map" role="region" aria-label="Map of nearby SecondStitch stockists"></div>
+        </div>
+        <div class="store-list" id="store-list" aria-live="polite"></div>
+        <div style="text-align: center; margin-top: 1.5rem">
+          <button class="btn btn--soft" type="button" id="retry-location">try location again</button>
+        </div>
+      </section>
+    </main>
+
+    <div
+      class="location-modal is-open"
+      id="location-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="location-title"
+      aria-hidden="false"
+    >
+      <div class="location-modal__panel">
+        <h2 class="display" id="location-title">share your location?</h2>
+        <p>
+          secondstitch uses your location only to find stores within 10 km that carry our products. we don’t store or sell your position.
+        </p>
+        <div class="location-modal__actions">
+          <button class="btn btn--primary btn--block" type="button" id="allow-location">
+            allow location access
+          </button>
+          <button class="btn btn--ghost btn--block" type="button" id="deny-location">not now</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <a class="logo" href="index.html">
+        <span class="logo__mark" aria-hidden="true"></span>
+        secondstitch
+      </a>
+      <nav aria-label="Footer">
+        <a href="designs.html">current designs</a>
+        <a href="submit.html">submit a design</a>
+        <a href="find.html">find near you</a>
+        <a href="contact.html">contact us</a>
+      </nav>
+      <p>&copy; 2026 secondstitch. repair is radical.</p>
+    </footer>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="js/main.js"></script>
+    <script src="js/map.js"></script>
+  </body>
+</html>

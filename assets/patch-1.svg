@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Moonstitch patch">
+  <defs>
+    <radialGradient id="g" cx="40%" cy="35%" r="70%">
+      <stop offset="0%" stop-color="#ffb3d9"/>
+      <stop offset="100%" stop-color="#7b8cff"/>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="92" fill="url(#g)"/>
+  <circle cx="100" cy="100" r="78" fill="none" stroke="#fff" stroke-width="3" stroke-dasharray="6 5" opacity=".75"/>
+  <path d="M118 52c-28 6-48 32-46 62 2 28 26 50 54 48-22-8-36-30-34-54 2-22 16-42 26-56z" fill="#fff" opacity=".95"/>
+  <circle cx="130" cy="70" r="3" fill="#fff"/><circle cx="145" cy="95" r="2.5" fill="#fff"/><circle cx="128" cy="110" r="2" fill="#fff"/>
+</svg>
